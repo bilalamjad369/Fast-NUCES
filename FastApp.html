@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+      #map-islamabad {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapislamabad = document.getElementById('map-islamabad');
+        var mapOptions = {
+          center: new google.maps.LatLng(33.656530, 73.016759),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapislamabad, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+<style>
+      #map-lahore {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var maplahore = document.getElementById('map-lahore');
+        var mapOptions = {
+          center: new google.maps.LatLng(31.481061, 74.303399),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(maplahore, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+<style>
+      #map-peshawar {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mappeshawar = document.getElementById('map-peshawar');
+        var mapOptions = {
+          center: new google.maps.LatLng(33.980461, 71.427172),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mappeshawar, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+<style>
+      #map-karachi {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapkarachi = document.getElementById('map-karachi');
+        var mapOptions = {
+          center: new google.maps.LatLng(24.859934, 67.069939),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapkarachi, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+<style>
+      #map-faislabad {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapfaislabad = document.getElementById('map-faislabad');
+        var mapOptions = {
+          center: new google.maps.LatLng(31.601480, 73.035731),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapfaislabad, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+<div data-role="page" id="pageone">
+  <div data-role="header">
+
+<img src="logo.jpg" alt="Fast logo" style="width:1340px;height:150px"> 
+   <img src="Front.jpg" alt="Fast logo" style="width:1340px;height:250px">
+  </div>
+
+   <div data-role="main" class="ui-content">
+    <ul data-role="listview" data-inset="true">  
+  <li><a href="C:\Users\Bilal\Desktop\Mobile App\admission.html" data-transition="slide">Admissions</a></li>
+  <li><a href="#pagecampuses" data-transition="slide">Campuses</a></li>
+  <li><a href="#pagedepartment" data-transition="slide">Departments</a></li>
+  </div>
+
+  <div data-role="footer">
+    <h1>copyrights@bilalamjad_i110110</h1>
+  </div>
+</div> 
+
+
+
+
+
+<div data-role="page" id="pagecampuses">
+  <div data-role="header">
+<img src="logo.jpg" alt="Fast logo" style="width:1340px;height:150px">
+    <h1>Fast-NUCES</h1>
+  </div>
+   <div data-role="collapsible">
+      <h1>Islamabad Campus</h1>
+      <p>Seated along the Kashmir Highway, the Islamabad Campus holds in view the capital city, with mystic thoughtfulness. A majestic banyan tree strikes the eye of the visitor before the overshadowed Campus’s beauty can capture his attention. The visitor experiences an instantaneous dilemma. He does not know whether to admire the panoramic scenery of the city, which lies before his eyes or marvel the academic décor of the Campus. Spread over a 15-acre land, right in the academic hub of the city, Islamabad Campus is steadily expanding both in terms of its area and study programs.
+The highly qualified, deeply committed, and professionally inspired faculty gives to the university an academic character. The faculty not only excels in their teaching abilities but also keep themselves abreast of the latest trends and developments in science and technology. They are also accomplished researchers, contributors, and developers in their respective areas of interest. The research projects carried out at the Campus range from Bio-Informatics, Agro-Informatics, Machine Intelligence, and Neural Networks to IT consulting.</p>
+<p><B>Contact Information</B></p>
+<p>A.K Brohi Road</p>
+<p>Sector H-11/4</p>
+<p>Tel: (051) 111 128 128 or (051) 831 4100 - 03</p> 
+
+
+ <div id="map-islamabad"></div>
+   
+</div>
+
+
+  <div data-role="collapsible">
+      <h1>Lahore Campus</h1>
+      <p>The Lahore Campus, spread over 12.5 acres, is located in Faisal Town which is the heart of greater Lahore. The campus consists of three blocks, which with their striking exterior brickwork and magnificent marble domes are a valuable addition to the rich architectural heritage of Lahore. The facilities consist of fully air-conditioned purpose built class rooms equipped with teaching aids, and a number of computing and engineering laboratories.
+The computing labs consist of database, programming, software engineering, and computer application labs. Latest computers, workstations and services having LINUX and Windows based environments are also readily available for the usage of students. The whole campus is fully equipped with fast Local Area Network and latest wireless hotspots.</p>
+<p><B>Contact Information</B></p>
+<p>Block-B, Faisal Town,</p>
+<p>Lahore.</p>
+<p>Tel: (042) 111 128 128</p>
+ <div id="map-lahore"></div>
+    </div>
+
+
+  <div data-role="collapsible">
+      <h1>Peshawar Campus</h1>
+      <p>The Peshawar campus was established in 2001. It is housed in an impressive building, which has an architectural design similar to that of the Lahore and Karachi campuses. The green, well maintained lawns that surround the building add to the scenic beauty of the whole setup. The Campus covers an area of 4 acres and is located in the Industrial Estate, Hayatabad. The satellite town of Hayatabad flanks it, which is an ideal place for students to find residence in privately run hostels. The historic Khyber Pass is within an hours drive from the Campus.
+The Campus has all the physical facilities that a modern educational institution should have. It has an excellent Intranet facility with a site for the students to inform them about their class attendance, grades and other academic information. The campus has fully air-conditioned, multi-media installed classrooms and lecture theatres, a hall, a library and Computer/ Engineering laboratories that have latest equipment. The library has a collection of over 6,000 books and subscribes to 35 journals, magazines and newspapers. It has computers for students to do online searches for study materials. It also has the distinction of being one of the first libraries in the province to be computerized.</p>
+<p><B>Contact Information</B></p>
+<p>160 Industrial Estate,</p>
+<p>Jamrud Road,
+Peshawar.</p>
+<p>Tel:(091) 111 128 128</p>
+ <div id="map-peshawar"></div>
+    </div>
+
+  <div data-role="collapsible">
+      <h1>Karachi Campus</h1>
+      <p>The Main Campus is located on a six acre site in Shah Latif Town on the National Highway, ten kilometres east of Karachi airport. The campus comprises spacious and fully air conditioned, purpose built classrooms, laboratories, auditorium, seminar rooms, and a spacious Library. The Engineering labs comprise Electronics, Electrical, Control Engineering, Signal Processing, Telecommunications, Networking, Multimedia and Computer Labs. The Computing Labs have latest computers and workstations having Linux and Windows-based environments. The campus is fully networked and it also provides wireless hotspots.
+A separate Student Activities block includes Cafeteria, Sports Complex for indoor games and a Gymnasium with all modern equipments. In addition to a Mosque, playgrounds for Cricket, Hockey, Football, Basketball, Badminton, Volleyball and Tennis courts are also available.</p>
+<p><B>Contact Information</B></p>
+<p>Shah Latif Town (On National Highway),</p>
+<p>Karachi.</p>
+<p>Tel: (021) 111 128 128</p>
+ <div id="map-karachi"></div>
+    </div>
+
+  <div data-role="collapsible">
+      <h1>Faislabad Campus</h1>
+      <p>Situated at the junction of Pakistan’s industrial hub—Faisalabad and the historically rich city of Chiniot in suburbs of River Chenab, the Chiniot - Faisalabad campus is the 5th campus of the university. The campus symbolises the desirable connect between nature and industry and between tradition and modernity. Its picturesque surroundings in the outskirts of Pakistan’s Manchester, the home to textile industry, represent human advancement from agrarian to industrial and technological society. The campus is located on 10 acres of land on Faisalabad Chiniot Road (about 9 Km’s from Faisalabad Motorway interchange - towards Chiniot).
+The Campus has been established to carry forward the academic traditions of excellence in professional and personal aspects of the students. The aim is follow the footsteps of the alumnae of the 4 sister campuses in Islamabad, Lahore, Karachi, and Peshawar. Graduates of all sister campuses of this university are well-received by the industry and hold prominent positions in many national and multinational corporations. A large number of university alumni are serving in prestigious institutions and organizations across the world like Microsoft, YouTube, Oracle, NCR, LMKR, IBM any many more. The physical proximity of the Campus with some of the leading industrial enterprises will go a long way in furthering the cause of professional education in the country.
+The campus offers degree programs in Computer Science, Electrical Engineering, and Business Administration. To confer academic excellence on its graduates, the campus has scholarly, seasoned, dedicated and professionally stimulated faculty.</p>
+<p><B>Contact Information</B></p>
+<p>Loonaywala Stop (9 Km from Motorway Interchange)</p>
+<p>Faisalabad-Chiniot Road</p>
+<p>Tel:(041) 111-128-128</p>
+ <div id="map-faislabad"></div>
+    </div>
+
+   <a href="#pageone" class="ui-btn ui-icon-back ui-btn-icon-left">Back</a>
+  </div>
+  <div data-role="footer">
+    <h1>copyrights@bilalamjad_i110110</h1>
+  </div>
+</div> 
+
+
+
+
+<div data-role="page" id="pagedepartment">
+  <div data-role="header">
+<img src="logo.jpg" alt="Fast logo" style="width:1340px;height:150px">
+    <h1>Fast-NUCES</h1>
+  </div>
+   <div data-role="main" class="ui-content">
+ <div data-role="collapsible">
+      <h1>BS(CS) Computer Sciences</h1>
+      <p>The purpose of Computer Science degree programs is to produce computer scientists, who can form the backbone of the rapidly growing computer industry. The BS program is focused on developing an in depth understanding of both the theoretical and practical aspects of computer science through a rigorous course work spanning over a period of four years. Students are given unique opportunities to go beyond traditional computer science and get themselves involved in research activities through various research and industrial collaboration programs carried out at the campuses. This ensures a broad based educational foundation that prepares them for leadership roles along diverse career paths.
+To equip students with modern trends in the ever changing field of computer science, courses are offered in concentration areas of Semantic Web, Multi-Agent Intelligent Systems, Networks, Data Mining and Data Warehousing, Software Engineering and Quality Assurance, Graphics and Game Programming, Image Processing, Soft Computing, Corporate and Business Computing, E-commerce etc. Students select courses from these areas to match with their future career options in a broad range of industrial, corporate, multinational, governmental and non-governmental organizations. Our courseware is tailored according to the international standards to nurture capacity building and original thinking in our graduates for life-long-learning. No doubt that our graduates are highly sought after by a majority of national and international IT industry.</p>
+<p><B>Career Opportunities</B></p>
+<p>Your career prospects will be excellent: You may become a software engineer, programmer, web developer, games programmer or computer graphic designer.</p>
+<p><B>Award of Degree</B></p>
+<p>For the award of BS (Computer Science) degree, a student must have:</p>
+<p>-Passed courses totalling at least 130 credit hours, including all those courses which have been specified as Core courses.</p>
+<p>-Obtained a CGPA of at least 2.00</p>
+<p><B>Program offered in Campuses</B></p>
+<table data-role="table" class="ui-responsive">
+      <thead>
+        <tr>
+          <th>Islamabad</th>
+          <th>Karachi</th>
+          <th>Lahore</th>
+          <th>Peshawar</th>
+          <th>Faislabad</th>
+        </tr>
+      </thead>
+      <tbody>
+
+<tr>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+     </tbody>
+    </table>
+
+    </div>
+
+ <div data-role="collapsible">
+      <h1>Bs(Accounting & Finance</h1>
+      <p>Accounting & Finance are the most significant and critical areas in the system of free enterprise. Good financial management is, therefore, vitally important to the economic health of business organizations. However, the constant shifts in economic conditions, intense competition for financial resources and questionable business practices have made financial management a complex and challenging undertaking. The BS Accounting & Finance program is designed to prepare students to meet the challenges posed by this complex but exciting area that has assumed much greater importance in the wake of the recent financial crisis in the world. This crisis has taught us that prudent financial management could mean the difference between a successful and an unsuccessful business enterprise. BS Accounting & Finance at FAST is tailored to first impart a broad-based education in the fundamentals of business and management and then develop the quantitative and analytical skills necessary to become prudent, astute and ethical financial managers.</p>
+<p><B>Career Opportunities</B></p>
+<p>There are a number of pathways to choose from including audit, taxation, budget analysis, financial accounting and management accounting.</p>
+<p><B>Award of Degree</B></p>
+<p>For the award of BS (Accounting & Finance) degree, a student must have:</p>
+<p>-Passed courses totalling at least 130 credit hours.</p>
+<p>-Obtained a CGPA of at least 2.00</p>
+<p><B>Program offered in Campuses</B></p>
+<table data-role="table" class="ui-responsive">
+      <thead>
+        <tr>
+          <th>Islamabad</th>
+          <th>Karachi</th>
+          <th>Lahore</th>
+          <th>Peshawar</th>
+          <th>Faislabad</th>
+        </tr>
+      </thead>
+      <tbody>
+
+<tr>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>No</td>
+          <td>Yes</td>
+        </tr>
+     </tbody>
+    </table>
+
+    </div>
+
+
+ <div data-role="collapsible">
+      <h1>Bachelors of Bussiness Administration</h1>
+      <p>Change is the only constant known today to the business world which has to grapple with the challenging realities of an increasingly global and complex marketplace. The Bachelor of Business Administration (BBA) program at FAST attempts to bring out dynamic managers and administrators, well-equipped to meet the challenges posed by this highly competitive global marketplace. To this end, the approach in the classroom is tailored to inculcate an appreciation for both the quantitative and qualitative dimensions of business. Quantitative skills developed through such areas as accounting, statistics, financial modelling and linear programming are combined with qualitative skills in communication, human psychology, marketing and organizational behaviour. Using these diverse skills and tools, BBA graduates are expected to be able to provide timely solutions to real-world business problems – solutions that are cost-effective, efficient and ethically correct.</p>
+<p><B>Career Opportunities</B></p>
+<p>Business Administration graduates can pursue careers in a wide range of business settings and are found in all types of organizations including industrial, commercial and financial as well as in the public sector. Many have the wide range of skills required to develop their own business or support a family business.</p>
+<p><B>Award of Degree</B></p>
+<p>For the award of BBA degree, a student must have:</p>
+<p>-Passed courses totalling at least 130 credit hours.</p>
+<p>-Obtained a CGPA of at least 2.00</p>
+<p><B>Program offered in Campuses</B></p>
+<table data-role="table" class="ui-responsive">
+      <thead>
+        <tr>
+          <th>Islamabad</th>
+          <th>Karachi</th>
+          <th>Lahore</th>
+          <th>Peshawar</th>
+          <th>Faislabad</th>
+        </tr>
+      </thead>
+      <tbody>
+
+<tr>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+     </tbody>
+    </table>
+    </div>
+
+ <div data-role="collapsible">
+      <h1>Electrical Engineering</h1>
+      <p>The Electrical Engineering degree is based on the HEC/PEC approved curriculum. In the first year the students learn the fundamentals of Electrical Engineering supported by essential mathematics and physics courses. These courses are followed by breadth courses which introduce students to different specialties in Electrical Engineering. In the senior year students choose a specialization stream and study advanced courses. Currently specializations are being offered in three areas, Telecommunication Engineering, and Computer Engineering. In the highly competitive job market a young engineer is not only required to be knowledgeable in technical areas but is also expected to have excellent communication and managerial skills and an appreciation of modern day economics to design and implement a cost effective engineering solution. Students are offered courses in communication skills, engineering management and economics to prepare them for challenging environments. Social Science electives and courses in Professional Ethics contribute in enhancing the soft skills and help prepare a well rounded personality. The course work is supported by state of the art engineering labs. During four years, students work in twelve different labs where they perform experiments using state of the art instruments, equipment and simulation software.</p>
+<p><B>Career Opportunities</B></p>
+<p>This versatile degree opens careers in different areas of electrical engineering. You could specialize in telecom or computer engineering. You could pursue a career in telecom industry, in embedded system design, or as a software programmer.</p>
+<p><B>Award of Degree</B></p>
+<p>For the award of BS (Electrical Engineering) degree, a student must have:</p>
+<p>-Passed courses totalling at least 136 credit hours, including all those courses which have been specified as Core courses.</p>
+<p>-Obtained a CGPA of at least 2.00</p>
+<p><B>Program offered in Campuses</B></p>
+<table data-role="table" class="ui-responsive">
+      <thead>
+        <tr>
+          <th>Islamabad</th>
+          <th>Karachi</th>
+          <th>Lahore</th>
+          <th>Peshawar</th>
+          <th>Faislabad</th>
+        </tr>
+      </thead>
+      <tbody>
+
+<tr>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+     </tbody>
+    </table>
+    </div>
+
+ <div data-role="collapsible">
+      <h1>Civil Engineering</h1>
+<p>The Civil Engineering degree is based on the HEC/PEC approved curriculum. In the first year the students learn the fundamentals of Civil Engineering supported by essential mathematics and physics courses. These courses are followed by breadth courses which introduce students to different aspects of Civil Engineering. In the senior year students choose a specialization stream and study advanced courses. In the highly competitive job market a graduate engineer is not only required to be knowledgeable in technical areas but is also expected to have excellent communication skills and an appreciation of cost effective engineering solutions. Students are offered courses in communication skills to prepare them for challenging environments. Courses like Professional Ethics contribute towards enhancing soft skills that help prepare a well rounded personality.</p>
+<p><B>Career Opportunities</B></p>
+<p>This degree program opens careers in different areas of Civil engineering.</p>
+<p><B>Award of Degree</B></p>
+<p>For the award of BS (Civil Engineering) degree, a student must have:</p>
+<p>-Passed courses totalling at least 136 credit hours, including all those courses which have been specified as Core courses.</p>
+<p>-Obtained a CGPA of at least 2.00</p>
+<p><B>Program offered in Campuses</B></p>
+<table data-role="table" class="ui-responsive">
+      <thead>
+        <tr>
+          <th>Islamabad</th>
+          <th>Karachi</th>
+          <th>Lahore</th>
+          <th>Peshawar</th>
+          <th>Faislabad</th>
+        </tr>
+      </thead>
+      <tbody>
+
+<tr>
+          <td>No</td>
+          <td>No</td>
+          <td>Yes</td>
+          <td>No</td>
+          <td>No</td>
+        </tr>
+     </tbody>
+    </table>
+
+    </div>
+
+ <a href="#pageone" class="ui-btn ui-icon-back ui-btn-icon-left">Back</a>
+  <div>
+  <div data-role="footer">
+    <h1>copyrights@bilalamjad_i110110</h1>
+  </div>
+</div> 
+
+
+
+</body>
+</html>
